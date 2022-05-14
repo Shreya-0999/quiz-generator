@@ -10,11 +10,13 @@ const PreferenceSection = (props) => {
         if(operator)
             props.setOperator(operator);
     }
-    const handleResetClick = (e) => {
+    const handleResetClick = () => {
         props.setQues(Number(ques));
         props.setRange(Number(range));
         if(operator)
             props.setOperator(operator);
+
+        props.reset(true);
     }
     return (
         <div>

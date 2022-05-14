@@ -20,6 +20,14 @@ const Quiz = (props) => {
         setQuesCount(quesCount + 1);
     }
 
+    const handleStartQuiz = () =>{
+        setStartQuiz(true);
+        props.setReset(false);
+        setQuesCount(0);
+        setScore(0)
+        setRes([])
+    }
+
     const handleSubmitBtn = () => {
         calculateScore();
         setAns('');
@@ -68,6 +76,12 @@ const Quiz = (props) => {
         setNum1(Math.floor((Math.random() * props.range) + 1));
         setNum2(Math.floor((Math.random() * props.range) + 1));
     }, [])
+
+    useEffect(()=>{
+        if(props.reset)
+            setStartQuiz(false);
+            setShowScoreCard(false);
+    },[props.reset])
 
     return (
         <>
@@ -122,7 +136,7 @@ const Quiz = (props) => {
                                 </>
                                 : <>
                                     <div className="buttonBox">
-                                        <button className="setBtn" onClick={() => setStartQuiz(true)} >Start Quiz</button>
+                                        <button className="setBtn" onClick={ handleStartQuiz} >Start Quiz</button>
                                     </div>
                                 </>
                         }

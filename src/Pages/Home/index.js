@@ -28,6 +28,7 @@ const Home = () => {
                         setRange={setRange}
                         setOperator={setOperator}
                         operatorArr={operatorArr}
+                        reset={setReset}
                     />
                 </div>
                 <div className="quizSection">
@@ -38,7 +39,10 @@ const Home = () => {
                             operator={operator}
                             setQuizEnd={setQuizOneEnd}
                             setRes={setRes1}
-                        />
+                            reset={reset}
+                            setReset = {setReset}
+                            
+                            />
                     </div>
                     <div className="quizSection-box">
                         <Quiz
@@ -47,6 +51,8 @@ const Home = () => {
                             operator={operator}
                             setQuizEnd={setQuizTwoEnd}
                             setRes={setRes2}
+                            reset={reset}
+                            setReset = {setReset}
                         />
                     </div>
                 </div>
