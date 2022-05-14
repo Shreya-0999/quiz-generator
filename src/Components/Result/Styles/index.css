@@ -1,0 +1,29 @@
+.result{
+    width: 100%;
+}
+.resultBox{
+    height:70px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    border-radius:15px;
+}
+.greenBg{
+    background-color: #d9fdd9;
+    border: 1px solid #8fd18f;
+}
+.redBg{
+    background-color: #fdd9d9;
+    border: 1px solid #d18f8f;
+}
+.textSpacing{
+    width: 10%;
+    color: #494858;
+    font-size: 1.1rem;
+}
+.bold{
+    font-weight: bold;
+    width:30%;
+}

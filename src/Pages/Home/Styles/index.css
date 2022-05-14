@@ -1,0 +1,32 @@
+.main{
+    /* width: 100vw; */
+    min-height: 100vh;
+    margin:1rem 3rem;
+    overflow-x: hidden;
+}
+.preferenceSection{
+    height: 25vh;
+    width: 100%;
+}
+.quizSection{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.quizSection-box{
+    height: 100%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224 225 245);
+}
+.resultSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+.resultSection-box{
+    height: 100%;
+    width:49%;
+}

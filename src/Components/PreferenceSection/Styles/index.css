@@ -1,0 +1,88 @@
+.headerBox{
+    height:15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    margin: 0;
+    font-size:2.5rem;
+    color: #49509e;
+}
+.input-data-container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #aba5a5;
+}
+.subHeaderBox{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #494850;
+}
+.subHeading{
+    width:100%;
+    margin: 0;
+}
+.inputBox{
+    width:100%;
+    display: flex;
+}
+.dropdown-box{
+    height:20%;
+    width:100%;
+    
+}
+.selectOperator{
+    height:20%;
+    width:100%;
+    display: flex;
+    
+}
+.operatorBox{
+    display:flex;
+    justify-content:space-evenly;
+}
+.operator-btn{
+    height:20px;
+    width:40px;
+    border-radius: 50%;
+    font-size:1rem;
+    color:#444444;
+    border: 1px solid rgb(126, 122, 122);
+}
+.buttonBox{
+    width:100%;
+    margin: 10px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setBtn{
+    height: 42px;
+    width: 135px;
+    border-radius: 2rem;
+    color: #eef4f9;
+    border: 1px solid rgb(73 80 158);
+    background: #49509e;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 2.1px;  
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputLable{
+    height:100%;
+    margin-right: 10px;
+    color: #3c4053;
+}
+.dropdown{
+    width: 40%;
+    height: 30px;
+}
